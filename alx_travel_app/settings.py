@@ -18,6 +18,8 @@ import environ
 env = environ.Env()
 environ.Env.read_env()  # Reads the .env file
 
+
+
 #print(env('DJANGO_SECRET_KEY'))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,7 +35,8 @@ SECRET_KEY = env('DJANGO_SECRET_KEY', default='fallback_secret_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["osamas.pythonanywhere.com"]
+
 
 
 # Application definition
